@@ -1,9 +1,9 @@
 ---
 - name: deploy paython app on host server
-  hosts: demo
-  become: yes
+  hosts: web
+  #become: yes
   tasks:
     - name: Clone project code.
       copy:
-        src: /var/lib/jenkins/workspace/git-clone-demo
-        dest: /root/docker-python-demo
+        src: /home/ansadmin/copy-code/
+        dest: /home/ansadmin/copy-code/
