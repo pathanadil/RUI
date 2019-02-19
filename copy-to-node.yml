@@ -5,5 +5,9 @@
   tasks:
     - name: Clone project code.
       copy:
-        src: /home/ansadmin/copy-code/
+        src: /home/ansadmin/app.py
+        dest: /home/ansadmin/copy-code/
+    - name: Clone project code.
+      copy:
+        src: /home/ansadmin/requirements.txt
         dest: /home/ansadmin/copy-code/
